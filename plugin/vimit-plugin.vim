@@ -9,10 +9,10 @@
 if exists("g:loaded_example-plugin")
     finish
 endif
-let g:loaded_example-plugin = 1
+let g:loaded_vimit-plugin = 1
 
 " Exposes the plugin's functions for use as commands in Vim.
-command! -nargs=0 DisplayTime call example-plugin#DisplayTime()
-command! -nargs=0 DefineWord call example-plugin#DefineWord()
-command! -nargs=0 AspellCheck call example-plugin#AspellCheck()
+command! -nargs=0 DisplayTime call vimit-plugin#DisplayTime()
+command! -nargs=0 DefineWord call vimit-plugin#DefineWord()
+command! -nargs=0 AspellCheck call vimit-plugin#AspellCheck()
     
