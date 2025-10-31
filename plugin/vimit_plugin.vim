@@ -6,13 +6,13 @@
 " Prevents the plugin from being loaded multiple times. If the loaded
 " variable exists, do nothing more. Otherwise, assign the loaded
 " variable and continue running this instance of the plugin.
-if exists("g:loaded_vimit-plugin")
+if exists("g:loaded_vimit_plugin")
     finish
 endif
-let g:loaded_vimit-plugin = 1
+let g:loaded_vimit_plugin = 1
 
 " Exposes the plugin's functions for use as commands in Vim.
-command! -nargs=0 DisplayTime call vimit-plugin#DisplayTime()
-command! -nargs=0 DefineWord call vimit-plugin#DefineWord()
-command! -nargs=0 AspellCheck call vimit-plugin#AspellCheck()
+command! -nargs=0 DisplayTime call vimit_plugin#DisplayTime()
+command! -nargs=0 DefineWord call vimit_plugin#DefineWord()
+command! -nargs=0 AspellCheck call vimit_plugin#AspellCheck()
     
